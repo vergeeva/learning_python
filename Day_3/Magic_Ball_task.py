@@ -11,8 +11,9 @@ import random
 # Имеются перспективы
 # Вопрос задан неверно
 # По желанию дополнить ответами.
+print("Привет, я магический шар!")
 answers = ["Да", "Нет", "Скорее всего да", "Скорее всего нет", "Возможно", "Имеются перспективы",
            "Вопрос задан неверно"]
-question = input("Введите ваш вопрос: ")
-print(answers[random.randrange(0, len(answers))])
-
+while True:
+    question = input("Введите ваш вопрос: ")
+    print(random.choice(answers))
