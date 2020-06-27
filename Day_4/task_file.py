@@ -18,7 +18,7 @@ def main():
     try:
         header.convert_text(a, b)
     except ValueError:
-        print("file not found")
+        print("files not found")
     aa = open(a)
     bb = open(b)
     print(aa.read())

@@ -27,3 +27,38 @@ def convert_text(file_1, file_2):
                 b.write(line[i])
     b.close()
     a.close()
+
+
+# 2. Дан текст в файле F1 в виде:
+# ИМЯ ОТЧЕСТВО ФАМИЛИЯ_1
+# ИМЯ ОТЧЕСТВО ФАМИЛИЯ_2
+# …
+# Описать функцию, которая формирует текстовую строку в формате:
+# ФАМИЛИЯ И.О.
+# Сохранить преобразованный текст в файле F2.
+# def convert_fio(a, b):
+#     aa = open(a)
+#     bb = open(b, 'w')
+#     c = list()
+#     counter = 0
+#     for line in aa:
+#         # bb.write(line[(line.rfind(' ') + 1):len(line)])
+#         # bb.write(line[0])
+#         # bb.write('. ')
+#         # bb.write(line[line.find('')+1])
+#         # bb.write('.')
+#     #     for i in range(len(line)):
+#     #         if line[i] == ' ':
+#     #             bb.write(line[i + 1])
+#     #             bb.write('. ')
+#     #             counter += 1
+#     #             if counter == 2:
+#     #                 print(i)
+#     #                 bb.write(line[i + 1:len(line)])
+#     #                 i -= 1
+#     #                 counter = 0
+#     #                 continue
+#     #         c.append(line[i])
+#     # print(c)
+#     aa.close()
+#     bb.close()
